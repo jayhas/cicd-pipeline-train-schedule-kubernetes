@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent { label "dev" } 
     environment {
         //be sure to replace "willbla" with your own Docker Hub username
         DOCKER_IMAGE_NAME = "jahas/train-schedule"
